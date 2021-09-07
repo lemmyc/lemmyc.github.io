@@ -1,0 +1,29 @@
+/* PC */
+@media (min-width: 64em){
+
+}
+
+
+/* Tablet + Mobile */
+@media (max-width: 63.9375em){
+
+}
+
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .under-construction-img{
+        height: 50%;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 46.1875em){
+    .under-construction-img{
+        height:30%;
+    }
+    .container h1{
+        font-size: 12px;
+    }
+}
