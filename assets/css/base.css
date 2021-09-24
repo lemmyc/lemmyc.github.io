@@ -4,6 +4,10 @@
     --text-color: #333;
     --primary-color: rgb(238, 75, 43);
     --border-color:#DBDBDB;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 *{
     box-sizing: inherit;
