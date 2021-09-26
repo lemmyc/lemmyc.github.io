@@ -398,6 +398,7 @@
         justify-content: center;
     display: none;
     animation: fadeIn .3s ease;
+    cursor: default;
 }
 .header__cart-list::after{
     content: "";
@@ -407,19 +408,39 @@
     border-width: 16px 20px;
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
-
+    cursor: pointer;
 }
+
 .header__cart-list--no-cart{
     padding: 24px 0;
+    text-align: center;
 }
-.header__cart-no-cart-img{
+.header__cart-list--no-cart .header__cart-list-no-cart-img,
+.header__cart-list--no-cart .header__cart-list-no-cart-msg{
+    display: block;
+}
+/* EDIT HERE */
+.header__cart-list-no-cart-img{
     width: 50%;
+    display: none;
 }
 .header__cart-list-no-cart-msg{
-    display: block;
+    display: none;
     font-size: 1.4rem;
     margin-top: 12px;
     color: #333;
+}
+.header__cart-notice{
+    position: absolute;
+    padding: 1px 7px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    top: -10px;
+    right: -10px;
 }
 .header__search-input-wrap{
     height: 100%;
