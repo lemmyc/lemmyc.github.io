@@ -122,7 +122,26 @@
                         <a href="#"><img src="./assets/img/xtbd-logo.png" alt="" class="header__logo-img"></a>
                     </div>
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Nhập món hàng bạn cần tìm kiếm...">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập món hàng bạn cần tìm kiếm...">
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">
+                                                card man hinh gtx 750 ti
+                                            </a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">
+                                                egpu cho laptop
+                                            </a>
+                                        </li>
+                                    </ul>
+                                
+                            </div>
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fas fa-angle-down"></i>
@@ -141,8 +160,17 @@
                             <i class="header__search-btn-icon fas fa-search"></i>
                         </button>
                     </div>
+                    <!-- Cart layout -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <div class="header__cart-list header__cart-list--no-cart">
+                                <img src="./assets/img/no-cart.png" alt="No cart" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm nào
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
