@@ -75,7 +75,7 @@ html{
 
 /* Button style */
 .btn{
-    min-width: 136px;
+    min-width: 126px;
     height: 34px;
     border: none;
     cursor: pointer;
