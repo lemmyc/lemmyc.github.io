@@ -760,3 +760,126 @@
 .header__cart-view-cart:hover{
     opacity: .8;
 }
+
+
+
+/* APP CONTAINER */
+.app_container{
+    background-color: #f5f5f5;
+}
+.app_content{
+    padding: 36px;
+}
+.category{
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+.category__heading{
+    font-size: 1.7rem;
+    color: #333;
+    padding: 12px 16px;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.category__heading-icon{
+    font-size: 1.4rem;
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+}
+.category-list{
+    list-style: none;
+    padding: 0 0 8px 0;
+    margin-left: 9px;
+}
+.category-item{
+
+}
+
+.category-item__link{
+    position: relative;
+    right: 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 4px 16px;
+    display: block;
+    transition: right ease .2s;
+}
+.category-item__link:hover{
+    color: var(--primary-color);
+    right: -4px;
+}
+.category-item--active .category-item__link{
+    color: var(--primary-color);
+}
+.category-item--active .category-item__link::before{
+    content: "";
+    top: 50%;
+    left: 8px;
+    position: absolute;
+    border: 4px solid;
+    border-color: transparent transparent  transparent var(--primary-color);
+    transform: translateY(calc(-50% - 1px));
+}
+/* Home sort + filter */
+.home-filter{
+   background-color: rgba(0, 0, 0, .04); 
+   display: flex;
+   align-items: center;
+   padding: 12px 22px;
+   border-radius: 2px;
+}
+.home-filter__page{
+    display: flex;
+   align-items: center;
+}
+.home-filter__label{
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 16px;
+}
+.home-filter__btn{
+    margin-right: 12px;
+    min-width: 90px;
+}
+.home-filter__page{
+    margin-left: auto;
+}
+.home-filter__page-num{
+    font-size: 1.4rem;
+    color: #333;
+}
+.home-filter__page-current{
+    color: var(--text-color);
+}
+.home-filter__page-control{
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+    margin-left: 8px;
+}
+.home-filter__page-btn{
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    text-decoration: none;
+}
+.home-filter__page-btn--disable{
+    background-color: #f9f9f9;
+    cursor: default;
+}
+.home-filter__page-btn--disable .home-filter__page-icon{
+    color: #ccc;
+}
+.home-filter__page-btn:first-child{
+    border: 1px solid #eee;
+}
+.home-filter__page-icon{
+    margin: auto;
+    font-size: 1.4rem;
+    color: #555;
+}   
