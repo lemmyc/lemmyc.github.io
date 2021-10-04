@@ -1,22 +1,115 @@
 /* PC */
 @media (min-width: 64em){
-    
+    .hide-on-pc{
+        display: none;
+    }
 }
 
 
 /* Tablet + Mobile */
 @media (max-width: 63.9375em){
-
+    :root{
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .header__cart-list{
+        position: fixed;
+        top:var(--header-height);
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px)/2);
+    }
+    .header__cart-list::after{display: none;}
+    .header__cart-list-item{
+        height: 20vh;
+    }
+    .app_container{
+        margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+    }
+    .header__sort-bar{
+        display: flex;
+    }
 }
 
 
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em){
-
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__cart{
+        width: 80px;
+        text-align: right;
+    }
+    .header__logo{
+        width: 170px;
+    }
+    .header__logo-img{
+        transform: scale(.7);
+        top: -40px;
+        left: 20px;
+    }
+    
 }
 
 
 /* Mobile */
 @media (max-width: 46.1875em){
-
+    .hide-on-mobile{
+        display: none;
+    }
+    .header{
+        max-width: 100vw;
+    }
+    .header-with-search{
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .header__cart{
+        width: unset;
+    }
+    .header__logo{
+        width: 180px;
+    }
+    .header__logo-img{
+        transform: scale(.8);
+        top: -50px;
+        left: calc(50% + 12px);
+        
+    }
+    .header__sort-bar{
+        max-width: 100vw;
+    }
+    .header__search{
+        max-width: 100vw;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        height: 46px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+        z-index: 1;
+        animation: mobileSearchSlideIn ease-in .4s;
+        display: none;
+    }
+    @keyframes mobileSearchSlideIn {
+        from{
+            top: calc(var(--header-height)/ 2);
+            opacity: 0;
+        }
+        to{
+            top: var(--header-height);
+            opacity: 1;
+        }
+    }
 }
