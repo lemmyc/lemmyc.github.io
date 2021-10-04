@@ -30,7 +30,11 @@
         width: 100%;
         padding: 0 calc((100% - 644px)/2);
     }
-    .header__cart-list::after{display: none;}
+    .header__cart-list::after{
+        /* background-color: red; */
+        right: 18px;
+        border-color: transparent;
+    }
     .header__cart-list-item{
         height: 20vh;
     }
@@ -103,6 +107,23 @@
         animation: mobileSearchSlideIn ease-in .4s;
         display: none;
     }
+    .app_content{
+        padding: 8px;
+    }
+    .pagination{
+        padding: 0;
+    }
+    .pagination-item{
+        margin: 0;
+    }
+    .pagination-item__link{
+        --height: 28px;
+        font-size: 1.6rem;
+        min-width: 36px;
+    }
+
+
+
     @keyframes mobileSearchSlideIn {
         from{
             top: calc(var(--header-height)/ 2);

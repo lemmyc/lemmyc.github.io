@@ -278,8 +278,8 @@
 /* PC medium resolution > */
 @media (min-width: 1113px) {
     .row {
-        margin-left: -6px;
-        margin-right: -6px;
+        margin-left: -12px;
+        margin-right: -12px;
     }
 
     .row.sm-gutter {
